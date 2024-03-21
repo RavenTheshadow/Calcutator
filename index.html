@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    let F1 = "";
+    let F2 = "";
+    let Result;
+    function myfunction(X) {
+        F1 += X;
+        document.getElementById("SRC").innerHTML = document.getElementById("SRC").innerHTML + X;
+    }
+    function myfunction2() {
+        F1 = "";
+        document.getElementById("SRC").innerHTML = "";
+    }
+
+    function calculate(X) {
+        switch (X) {
+            case X == '+':
+                Result = Number(F1) + Number(F2);
+                document.getElementById("SRC").innerHTML = toString(Result);
+                break;
+
+            case X == '-':
+                Result = Number(F1) - Number(F2);
+                document.getElementById("SRC").innerHTML = Result;
+                break;
+
+            case X == '*':
+                Result = Number(F1) * Number(F2);
+                document.getElementById("SRC").innerHTML = Result;
+                break;
+
+            case X == '/':
+                Result = Number(F1) / Number(F2);
+                document.getElementById("SRC").innerHTML = Result;
+                break;
+
+            default:
+                break;
+        }
+    }
+</script>
+
+
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <p id="SRC"></p>
+        </div>
+        <!-- 
+                1 2 3
+                4 5 6
+                7 8 9
+                  0     -->
+
+        <div class="number">
+        </div>
+        <div class="L3">
+            <button id="B7" onclick="myfunction(7)">7</button>
+            <button id="B8" onclick="myfunction(8)">8</button>
+            <button id="B9" onclick="myfunction(8)">9</button>
+            <button>/</button>
+            <button onclick="myfunction2()">AC</button>
+        </div>
+
+        <div class=" L2">
+            <button id="B4" onclick="myfunction(4)">4</button>
+            <button id="B5" onclick="myfunction(5)">5</button>
+            <button id="B6" onclick="myfunction(6)">6</button>
+            <button>*</button>
+            <button>DEL</button>
+        </div>
+
+        <div class="L1">
+            <button id="B1" onclick="myfunction(1)">1</button>
+            <button id="B2" onclick="myfunction(2)">2</button>
+            <button id="B3" onclick="myfunction(3)">3</button>
+            <button>-</button>
+        </div>
+        <div class="L0">
+            <button id="B0" onclick="myfunction(0)">0</button>
+            <button>.</button>
+            <button>=</button>
+            <button>+</button>
+        </div>
+
+
+    </div>
+
+
+
+
+    </div>
+    </div>
+</body>
+
+</html>

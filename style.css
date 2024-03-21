@@ -1,0 +1,25 @@
+body {
+    margin-left: 400px;
+    padding: 20px;
+}
+
+.screen {
+    width: 320px;
+    height: 50px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 0px;
+    background-color: rgba(204, 204, 206, 0.611);
+
+    font-size: 20px;
+    text-align: center;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
