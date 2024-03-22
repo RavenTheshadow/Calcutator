@@ -1,25 +1,77 @@
-body {
-    margin-left: 400px;
-    padding: 20px;
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.calculator {
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+
+    margin-top: 10%;
+    margin-left: 38%;
+    margin-right: 37%;
 }
 
 .screen {
-    width: 320px;
-    height: 50px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    margin-left: 0px;
-    background-color: rgba(204, 204, 206, 0.611);
+    height: 60px;
 
-    font-size: 20px;
-    text-align: center;
+    border: 3px solid white;
+    border-radius: 10px;
+
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
 }
 
 button {
-    width: 50px;
-    height: 50px;
+    border: 3px solid white;
+    border-radius: 10px;
+
     margin-left: 5px;
-    margin-top: 5px;
     margin-right: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    color: white;
+    width: 60px;
+    height: 60px;
+}
+
+button:hover {
+    background-color: rgba(19, 239, 19, 0.655);
+}
+
+button:horizontal {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+#SRC {
+    font-size: 50px;
+    line-height: 60px;
+    margin-right: 10px;
+    text-align: right;
+    color: rgba(9, 255, 9, 0.892);
+}
+
+.DEL {
+    background-color: rgb(255, 0, 0);
+}
+
+.Equal {
+    background-color: rgba(34, 252, 1, 0.693);
+}
+
+.FUNC {
+    background-color: rgba(203, 49, 241, 0.853);
+}
+
+button {
+    font-family: monospace;
+    font-display: inherit;
+    font-weight: bold;
+    font-size: 20px;
 }
