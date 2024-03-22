@@ -7,45 +7,32 @@
 .calculator {
     border: 5px solid rgb(255, 255, 255);
     border-radius: 10px;
-
-    margin-top: 10%;
-    margin-left: 38%;
-    margin-right: 37%;
+    margin: 10% auto;
+    width: fit-content;
 }
 
 .screen {
     height: 60px;
-
     border: 3px solid white;
     border-radius: 10px;
-
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 30px;
+    margin: 30px 10px;
 }
 
 button {
     border: 3px solid white;
     border-radius: 10px;
-
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-
+    margin: 10px 5px;
     color: white;
     width: 60px;
     height: 60px;
+    font-family: monospace;
+    font-display: inherit;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 button:hover {
     background-color: rgba(19, 239, 19, 0.655);
-}
-
-button:horizontal {
-    display: inline-block;
-    margin-right: 10px;
 }
 
 #SRC {
@@ -66,11 +53,4 @@ button:horizontal {
 
 .FUNC {
     background-color: rgba(203, 49, 241, 0.853);
-}
-
-button {
-    font-family: monospace;
-    font-display: inherit;
-    font-weight: bold;
-    font-size: 20px;
 }
