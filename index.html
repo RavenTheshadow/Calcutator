@@ -8,6 +8,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        background-color: black;
+    }
+
+    .calculator {
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        margin: 10% auto;
+        width: fit-content;
+    }
+
+    .screen {
+        height: 60px;
+        border: 3px solid white;
+        border-radius: 10px;
+        margin: 30px 10px;
+    }
+
+    button {
+        border: 3px solid white;
+        border-radius: 10px;
+        margin: 10px 5px;
+        color: white;
+        width: 60px;
+        height: 60px;
+        font-family: monospace;
+        font-display: inherit;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    button:hover {
+        background-color: rgba(19, 239, 19, 0.655);
+    }
+
+    #SRC {
+        font-size: 50px;
+        line-height: 60px;
+        margin-right: 10px;
+        text-align: right;
+        color: rgba(9, 255, 9, 0.892);
+    }
+
+    .DEL {
+        background-color: rgb(255, 0, 0);
+    }
+
+    .Equal {
+        background-color: rgba(34, 252, 1, 0.693);
+    }
+
+    .FUNC {
+        background-color: rgba(203, 49, 241, 0.853);
+    }
+</style>
+
+
 <body>
     <div class="calculator">
         <div class="screen">
