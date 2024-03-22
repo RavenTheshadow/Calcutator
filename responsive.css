@@ -4,21 +4,32 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 720px) and (max-height: 1024px) {
     button {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
     }
 
     #DB {
-        width: 33.5%;
+        width: 35.5%;
     }
 
     .screen {
-        height: 60px;
-        border: 3px solid rgb(219, 143, 143);
+        height: 30px;
+        border: 3px solid rgb(255, 255, 255);
         border-radius: 10px;
         margin-left: 5px;
         margin-right: 5px;
+    }
+
+    #SRC {
+        font-size: 20px;
+        line-height: 30px;
+        margin-right: 10px;
+        text-align: right;
+        color: rgba(9, 255, 9, 0.892);
     }
 }
